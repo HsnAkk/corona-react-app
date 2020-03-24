@@ -90,18 +90,18 @@ class CountrySearch extends Component {
             {
                 name: 'GERMANY',
                 chartData: germany
-            },
-            {
-                name: 'TURKEY',
-                chartData: turkey
             }
+            // {
+            //     name: 'TURKEY',
+            //     chartData: turkey
+            // }
         ]
 
         return (
             <div className="mb-5">
                 <CardGroup>
                     {
-                        barChartCountries.map( (item, index) => <div key={index} style={{width: '20%'}}>
+                        barChartCountries.map( (item, index) => <div key={index} className="col-12 col-md-4 col-lg-3">
                                                                     <div style={{margin: '20px'}}>
                                                                         <BarChart {...item} />
                                                                     </div>

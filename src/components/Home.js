@@ -40,7 +40,7 @@ class Home extends Component {
         this.interval = setInterval( () => {
             console.log('setInterval works again');
             getData();
-        }, 60000)
+        }, 3600000)
     }
 
     componentWillUnmount() {
